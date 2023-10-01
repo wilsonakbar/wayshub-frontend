@@ -3,8 +3,8 @@ def repo = "https://github.com/wilsonakbar/wayshub-frontend.git"
 def cred = "appserver"
 def dir = "~/wayshub-frontend"
 def server = "ditoihkam@103.175.221.143"
-def imagename = "wayshub-frontend"
-def dockerusername = "wilson"
+def imagename = "wayshub-fe"
+def dockerusername = "ditoihkam"
 
 pipeline {
     agent any
