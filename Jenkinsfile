@@ -1,6 +1,6 @@
 def branch = "main"
 def repo = "https://github.com/wilsonakbar/wayshub-frontend.git"
-def cred = "appserver"
+def cred = "ditoihkam"
 def dir = "~/wayshub-frontend"
 def server = "ditoihkam@103.175.221.143"
 def imagename = "wayshub-fe"
@@ -13,7 +13,7 @@ pipeline {
         stage('Pull From Repository') {
             steps {
                 sshagent([cred]) {
-                    sh """ssh -o StrictHostKeyChecking=no ${server} << EOF
+                    sh """ssh -o StrictHostKeyChecking=no ditoihkam@103.175.221.143 << EOF
                         cd ${dir}
                         git remote add origin ${repo} || git remote set-url origin ${repo}
                         git pull origin ${branch}
